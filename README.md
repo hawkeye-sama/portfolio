@@ -28,3 +28,5 @@ If you find any issues or bugs in this project, feel free to open an issue or su
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for more information.
+
+### Inspired from [Link](https://arbaz52.github.io/portfolio/). Made for the community <3
