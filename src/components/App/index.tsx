@@ -21,7 +21,7 @@ dayjs.extend(relativeTime);
 
 function App() {
   const [theme, toggleTheme] = useReducer(
-    (_theme: TTheme) => (_theme === 'Dark' ? 'Light' : 'Dark') as TTheme,
+    (_theme: TTheme): TTheme => (_theme === 'Dark' ? 'Light' : 'Dark'),
     'Dark',
   );
 

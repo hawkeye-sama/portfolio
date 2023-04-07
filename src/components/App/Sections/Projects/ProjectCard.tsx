@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const CardContainer = styled.div`
+const CardContainer = styled.div<{ isDisabled: boolean }>`
   background-color: ${(props) => props.theme.colors.cardHighlighted};
   border-radius: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -11,8 +11,9 @@ const CardContainer = styled.div`
   width: 100%;
   transition: background-color 0.2s ease-in-out;
   &:hover {
-    background-color: ${(props) => props.theme.colors.cardAccent};
-    cursor: pointer;
+    background-color: ${(props) =>
+      props.isDisabled ? props.theme.colors.error : props.theme.colors.cardAccent};
+    cursor: ${(props) => (props.isDisabled ? 'default' : 'pointer')};
 
     h3,
     p {
@@ -64,6 +65,7 @@ ProjectCard.defaultProps = {
 function ProjectCard({ imageUrl, title, description, link }: ProjectCardProps) {
   return (
     <CardContainer
+      isDisabled={!link}
       onClick={() => {
         if (!link) {
           return;
@@ -72,7 +74,12 @@ function ProjectCard({ imageUrl, title, description, link }: ProjectCardProps) {
         window.open(link, '_blank');
       }}
     >
-      {imageUrl && <ImageContainer imageUrl={imageUrl} />}
+      <ImageContainer
+        imageUrl={
+          imageUrl ||
+          'https://www.annesara.nl/wp-content/themes/claue/assets/images/placeholder.png'
+        }
+      />
       <InfoContainer>
         <ProjectTitle>{title}</ProjectTitle>
         <ProjectDescription>{description}</ProjectDescription>

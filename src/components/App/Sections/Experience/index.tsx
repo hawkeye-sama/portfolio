@@ -22,7 +22,6 @@ function MySkillsAndExpertiseSection() {
               Despite its early success, Bindr closed it's doors on March 2023."
             position="Full Stack/Flutter Developer"
             years="Nov 2021 - April 2023"
-            isDisabled
           />
           <ExperienceCard
             company="Skupreme"

@@ -1,3 +1,4 @@
+import BindrImage from 'assets/images/bindr.png';
 import Button from 'components/Button';
 import { Typography } from 'components/Typography';
 import React, { memo } from 'react';
@@ -48,6 +49,12 @@ function ProjectsGallerySection() {
           />
         </CardWrapper>
         <CardWrapper>
+          <ProjectCard
+            imageUrl={BindrImage}
+            title="Bindr"
+            description="An online platform where students can study together in a conference session. It was built with Jitsi for conference calls and Streamchat for chat functionality.
+            It closed down March 2023."
+          />
           <ProjectCard
             title="Sparrow"
             description="A Sneaker ecommerce mobile app built with flutter. Currently in work in progress by me. Just a fun side project, implemented with BLoC pattern."
