@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { Section as _Section } from '../../styled.components';
 
 export const Section = styled(_Section)`
-  gap: 48px;
+  gap: 3rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -17,9 +17,9 @@ export const Section = styled(_Section)`
 `;
 
 export const AboutMeWrapper = styled.div`
-  max-width: 600px;
+  max-width: 37.5rem;
   display: flex;
-  gap: 16px;
+  gap: 1rem;
   flex-direction: column;
 `;
 
@@ -28,25 +28,32 @@ export const AboutMeText = styled.h3`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   position: relative;
 
   ::before,
   ::after {
     content: '';
     display: block;
-    height: 5px;
+    height: 0.313rem;
     background: ${(props) => props.theme.colors.accent};
     position: absolute;
-    width: 200px;
+    width: 12.5rem;
   }
 
   ::before {
-    left: -4px;
+    left: -0.25rem;
   }
 
   ::after {
-    right: -4px;
+    right: -0.25rem;
+  }
+
+  @media only screen and (max-width: ${breakpoints.md}) {
+    ::before,
+    ::after {
+      width: 5.93rem;
+    }
   }
 `;
 

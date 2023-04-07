@@ -2,13 +2,13 @@ import styled, { css } from '../../assets/themes';
 import { ITypographyProps } from './types';
 
 export const Typography = styled.span<ITypographyProps>`
-  line-height: 24px;
-  letter-spacing: 1px;
+  line-height: 1.5rem;
+  letter-spacing: 0.0625rem;
   ${(props) =>
     props.lead &&
     css`
-      font-size: 1.125rem;
-      line-height: 24px;
+      font-size: 18px;
+      line-height: 1.5rem;
     `};
 
   color: ${(props) => {

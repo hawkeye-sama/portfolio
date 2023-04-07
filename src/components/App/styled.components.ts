@@ -22,9 +22,9 @@ export const CSSReset = createGlobalStyle`
     overflow: auto;
 
     ::-webkit-scrollbar {
-      width: 6px;
+      width: .375rem;
       &-thumb {
-        border-radius: 12px;
+        border-radius: .75rem;
         background: #ccc;
       }
     }
@@ -42,63 +42,63 @@ export const Headings = createGlobalStyle`
   }
   h5, h6 {
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: .125rem;
   }
   h1 {
-    font-size: 4.209rem;
-    line-height: 72px;
+    font-size: 67.344px;
+    line-height: 4.5rem;
     letter-spacing: 0;
   }
   h2 {
-    font-size: 3.157rem;
-    line-height: 64px;
+    font-size: 50.512px;
+    line-height: 4rem;
     letter-spacing: 0;
   }
   h3 {
-    font-size: 2.369rem;
-    line-height: 48px;
+    font-size: 37.904px;
+    line-height: 3rem;
     letter-spacing: 0;
   }
   h4 {
-    font-size: 1.777rem;
-    line-height: 40px;
+    font-size: 28.432px;
+    line-height: 2.5rem;
     letter-spacing: 0;
   }
   h5 {
-    font-size: 1.333rem;
-    line-height: 24px;
+    font-size: 21.328px;
+    line-height: 1.5rem;
     letter-spacing: 0;
   }
   h6 {
-    font-size: 1rem;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 1.5rem;
     letter-spacing: 0;
   }
 
   @media only screen and (max-width: ${breakpoints.lg}) {
     h1 {
-      font-size: 1.802rem;
-      line-height: 40px;
+      font-size: 28.832px;
+      line-height: 2.5rem;
     }
     h2 {
-      font-size: 1.602rem;
-      line-height: 40px;
+      font-size: 25.632px;
+      line-height: 2.5rem;
     }
     h3 {
-      font-size: 1.424rem;
-      line-height: 32px;
+      font-size: 22.784px;
+      line-height: 2rem;
     }
     h4 {
-      font-size: 1.266rem;
-      line-height: 32px;
+      font-size: 20.256px;
+      line-height: 2rem;
     }
     h5 {
-      font-size: 1.125rem;
-      line-height: 24px;
+      font-size: 18px;
+      line-height: 1.5rem;
     }
     h6 {
-      font-size: 1rem;
-      line-height: 24px;
+      font-size: 16px;
+      line-height: 1.5rem;
       letter-spacing: 0;
     }
   }
@@ -109,19 +109,19 @@ export const Section = styled.div`
   min-height: 100vh;
 
   @media only screen and (max-width: ${breakpoints.md}) {
-    padding: 24px;
+    padding: 1.5rem;
   }
 `;
 
 export const Stripe = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 2rem;
   justify-content: center;
   align-items: center;
 
-  padding: 70px 0;
-  min-height: 200px;
+  padding: 4.375rem 0;
+  min-height: 12.5rem;
 
   background: ${(props) => props.theme.colors.backgroundHighlighted};
 `;
@@ -129,6 +129,6 @@ export const Stripe = styled.div`
 export const IconWithText = styled.div`
   display: flex;
   align-items: center;
-  padding: 8px;
-  gap: 16px;
+  padding: 0.5rem;
+  gap: 1rem;
 `;

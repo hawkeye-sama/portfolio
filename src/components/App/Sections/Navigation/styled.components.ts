@@ -9,7 +9,7 @@ export const NavigationContainer = styled.div<{ open: boolean }>`
   position: fixed;
   padding: 16px 8px;
   transform: translateY(-50%);
-  gap: 32px;
+  gap: 2rem;
   display: flex;
   flex-direction: column;
 
@@ -33,16 +33,20 @@ export const NavigationContainer = styled.div<{ open: boolean }>`
         display: none;
       `}
   }
+
+  @media only screen and (max-width: ${breakpoints.md}) {
+    justify-content: start;
+  }
 `;
 
 export const NavigationWrapper = styled.div`
-  gap: 32px;
+  gap: 2rem;
   display: flex;
   flex-direction: column;
 `;
 
 export const IconLink = styled(_IconLink)`
-  gap: 16px;
+  gap: 1rem;
   display: flex;
   flex-direction: row;
   text-decoration: none;
@@ -59,7 +63,7 @@ export const LinkTitle = styled.h6`
 `;
 
 export const CloseIcon = styled(IconLink)`
-  margin-right: -16px;
+  margin-right: -1rem;
   display: none;
   align-self: flex-end;
   @media only screen and (max-width: ${breakpoints.lg}) {
@@ -73,8 +77,8 @@ export const OpenNavigation = styled(Icon)`
     display: block;
   }
 
-  top: 24px;
-  right: 24px;
+  top: 1.5rem;
+  right: 1.5rem;
   position: fixed;
   * {
     fill: ${({
@@ -82,5 +86,12 @@ export const OpenNavigation = styled(Icon)`
         colors: { bodyText: fill },
       },
     }) => fill};
+  }
+`;
+
+export const SwitcherIcon = styled(IconLink)`
+  @media only screen and (max-width: ${breakpoints.lg}) {
+    margin-top: auto;
+    margin-bottom: 1.25rem;
   }
 `;
