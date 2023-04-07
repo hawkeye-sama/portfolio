@@ -79,7 +79,7 @@ export const CardContainer = styled.div<{ isDisabled: boolean }>`
 `;
 
 export const Section = styled(_Section)`
-  padding-top: 50px;
+  padding: 50px 0;
   display: flex;
   flex-direction: row;
   align-items: center;
