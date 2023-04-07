@@ -18,7 +18,7 @@ Clone this repo to your directory and run the following commands
 ## Todo List
 
 - [ ] Add tests  
-- [ ] Mobile optimization
+- [x] Mobile optimization
 - [ ] Move porfolio data to json so that it can be easily be updated by anyone.
 
 ## Contributing
