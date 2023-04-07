@@ -8,18 +8,16 @@ type CardProps = {
   years: string;
   description: string;
   link?: URL | undefined;
-  isDisabled?: boolean;
 };
 
 ExperienceCard.defaultProps = {
   link: undefined,
-  isDisabled: false,
 };
 
-function ExperienceCard({ position, company, years, description, link, isDisabled }: CardProps) {
+function ExperienceCard({ position, company, years, description, link }: CardProps) {
   return (
     <CardContainer
-      isDisabled={isDisabled || false}
+      isDisabled={!link}
       onClick={() => {
         if (!link) {
           return;

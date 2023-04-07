@@ -20,7 +20,7 @@ function Navigation() {
 
   const handleClick = useCallback((ev: MouseEvent<HTMLAnchorElement>) => {
     ev.preventDefault();
-    const { href } = ev.currentTarget as HTMLAnchorElement;
+    const { href } = ev.currentTarget;
 
     const el = document.getElementById(href.split('#')[1]);
     if (el) {
@@ -31,7 +31,19 @@ function Navigation() {
   }, []);
   return (
     <>
-      <OpenNavigation icon="burger" variant="stroke" onClick={toggleNavigation} highlighted />
+      <div
+        role="button"
+        tabIndex={0}
+        onClick={toggleNavigation}
+        onKeyDown={(event) => {
+          if (event.key === 'Enter') {
+            toggleNavigation();
+          }
+        }}
+      >
+        <OpenNavigation icon="burger" variant="stroke" highlighted />
+      </div>
+
       <NavigationContainer open={navigationOpen}>
         <CloseIcon onClick={toggleNavigation}>
           <Icon icon="close" variant="stroke" highlighted />

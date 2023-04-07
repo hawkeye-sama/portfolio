@@ -8,15 +8,15 @@ import { IButtonProps } from './types';
 export const Button = styled.button<IButtonProps>`
   outline: none;
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   font-weight: 400;
   text-decoration: none;
-  letter-spacing: 2px;
-  border: 1px solid transparent;
+  letter-spacing: 0.125rem;
+  border: 0.0625rem solid transparent;
   background: transparent;
   color: ${(props) => props.theme.colors.text};
   display: flex;
-  gap: 12px;
+  gap: 0.75rem;
   align-items: center;
 
   white-space: nowrap;
@@ -24,12 +24,12 @@ export const Button = styled.button<IButtonProps>`
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 
   &:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.12), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.24);
     transform: scale(1.04);
   }
 
   &:active {
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.12), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.24);
     transform: scale(0.96);
   }
 
@@ -37,16 +37,16 @@ export const Button = styled.button<IButtonProps>`
     switch (props.size) {
       case 'small':
         return css`
-          font-size: 0.875rem;
-          line-height: 16px;
-          padding: 8px 16px;
+          font-size: 14px;
+          line-height: 1rem;
+          padding: 0.5rem 1rem;
         `;
       case 'medium':
       default:
         return css`
-          font-size: 1rem;
-          line-height: 24px;
-          padding: 16px 32px;
+          font-size: 16px;
+          line-height: 1.5rem;
+          padding: 1rem 2rem;
         `;
     }
   }}
@@ -76,9 +76,9 @@ export const Button = styled.button<IButtonProps>`
 
   @media only screen and (max-width: ${breakpoints.md}) {
     text-transform: uppercase;
-    padding: 8px 16px;
-    letter-spacing: 1px;
-    font-size: 12px;
+    padding: 0.5rem 1rem;
+    letter-spacing: 0.0625rem;
+    font-size: 0.75rem;
   }
 `;
 

@@ -1,15 +1,14 @@
-import { IconWithText } from 'components/App/styled.components';
 import { Icon } from 'components/Icon';
 import React, { memo } from 'react';
 
-import { ContentWrapper, Stripe } from './styled.components';
+import { ContentWrapper, HeartIcon, IconWithText, Stripe } from './styled.components';
 
 function WhatIUseStrip() {
   return (
     <Stripe id="using">
       <IconWithText>
-        <Icon icon="heart" variant="stroke" highlighted />
-        <h5>Platforms, Languages and Framework</h5>
+        <HeartIcon icon="heart" variant="stroke" highlighted />
+        <h3>Platforms, Languages and Framework</h3>
       </IconWithText>
       <ContentWrapper>
         <IconWithText>
@@ -20,10 +19,13 @@ function WhatIUseStrip() {
           <Icon icon="github" variant="stroke" />
           <h6>Github</h6>
         </IconWithText>
-
         <IconWithText>
           <Icon icon="code" variant="stroke" />
           <h6>HTML5, CSS3 &amp; Javascript</h6>
+        </IconWithText>
+        <IconWithText>
+          <Icon icon="typescript" variant="stroke" />
+          <h6>TypeScript</h6>
         </IconWithText>
       </ContentWrapper>
       <ContentWrapper>

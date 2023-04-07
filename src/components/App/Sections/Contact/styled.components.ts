@@ -7,16 +7,16 @@ export const Section = styled(_Section)`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 32px;
+  gap: 2rem;
 `;
 
 export const ContentWrapper = styled.div`
-  max-width: 450px;
+  max-width: 28.125rem;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 1rem;
   text-align: center;
 `;

@@ -16,9 +16,9 @@ function Button({ as, href, prefix, suffix, target, children, download, ...props
       background={props.background}
       contentColor={props.contentColor}
     >
-      {prefix && <Icon icon={prefix} />}
+      {prefix && <Icon icon={prefix} variation={props.variation} />}
       {children}
-      {suffix && <Icon icon={suffix} />}
+      {suffix && <Icon icon={suffix} variation={props.variation} />}
     </ButtonEl>
   );
 }
