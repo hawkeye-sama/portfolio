@@ -43,7 +43,7 @@ function HeroSection() {
                 as="a"
                 target="_blank"
                 download
-                href="/resume.pdf"
+                href="/portfolio/resume.pdf"
               >
                 Download My Resume
               </Button>
