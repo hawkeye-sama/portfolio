@@ -1,6 +1,6 @@
 # My Portfolio - ReactJS with TypeScript
 
-Just another porfolio with minimal clean design.  
+Just another porfolio with minimal clean design. To check out my portfolio, Click [here](https://hawkeye-sama.github.io/portfolio/)
 
 ## Requirements
 
