@@ -1,5 +1,6 @@
 import Button from 'components/Button';
 import Svg from 'components/Svg';
+import ThemeContext from 'contexts/ThemeContext';
 import React, { memo } from 'react';
 
 import {
@@ -15,6 +16,14 @@ import {
 } from './styled.components';
 
 function HeroSection() {
+  const { theme } = React.useContext(ThemeContext);
+
+  const resumePath: string = React.useMemo(
+    () =>
+      theme === 'Dark' ? '/portfolio/resume-dark-mode.pdf' : '/portfolio/resume-light-mode.pdf',
+    [theme],
+  );
+
   return (
     <div>
       <Section id="hero">
@@ -43,7 +52,7 @@ function HeroSection() {
                 as="a"
                 target="_blank"
                 download
-                href="/portfolio/resume.pdf"
+                href={resumePath}
               >
                 Download My Resume
               </Button>
