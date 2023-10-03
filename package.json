@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "homepage": "https://hawkeye-sama.github.io/portfolio",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": true,
   "dependencies": {
     "dayjs": "^1.10.6",

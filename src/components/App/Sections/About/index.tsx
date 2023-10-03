@@ -11,17 +11,19 @@ function AboutSection() {
       <AboutMeWrapper>
         <AboutMeText>About me</AboutMeText>
         <Typography variant="body">
-          Hello! I enjoy creating things that live on the internet. My interest in coding back in
-          college when I discovered <AccentText variant="accent">Kali Linux</AccentText> — turns out
-          it&apos;s quite fun experimentating what can be done and I was hooked into coding.
+          Hello there! I&apos;m passionate about crafting digital experiences that come to life on
+          the internet. My journey into the world of coding began during my college days when I
+          stumbled upon <AccentText variant="accent">Kali Linux</AccentText>. Little did I know that
+          this discovery would ignite my passion for experimentation and coding.
         </Typography>
         <Typography variant="body">
-          Fast-forward to today, and I’ve had the privilege of working at an{' '}
+          Fast-forward to today, and I’ve had the privilege of working at a{' '}
           <AccentText variant="accent">
-            Supply chain platform, a Start-up, and a SaaS solutions company,
+            Supply chain platform, a dynamic startup, and a cutting-edge SaaS solutions company,
           </AccentText>{' '}
-          and each opportunity made me a better version of myself. These days I&apos;m discovering{' '}
-          <AccentText variant="accent">Blockchain</AccentText>, and trying to
+          Each of these opportunities has enriched me and allowed me to evolve into a better version
+          of myself. These days I&apos;m discovering{' '}
+          <AccentText variant="accent">Blockchain</AccentText>, striving to
           <AccentText variant="accent"> contribute to open source projects</AccentText>.
         </Typography>
         <Typography variant="body">
@@ -46,7 +48,7 @@ function AboutSection() {
             }
           }}
         >
-          Let&apos;s make something special.
+          Let&apos;s embark on a journey to create something truly extraordinary together!
         </AccentText>
       </AboutMeWrapper>
     </Section>
